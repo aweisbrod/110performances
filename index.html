@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Favorite 110 Performances</title>
+
+    <!-- Bootstrap CSS -->
+    <link href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' />
+
+    <!-- Google Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- stylesheet -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- javascript -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- internal css -->
+    <style>
+        /* images */
+        .headerImage {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .images {
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        /* text */
+        .p-padding {
+            padding: 60px;
+        }
+
+        .h-padding {
+            padding-top: 100px;
+        }
+
+
+        /* section headers */
+        .sectionHead {
+            text-align: center;
+            padding-top: 200px;
+        }
+    </style>
+
+</head>
+
+
+<!-- body begins -->
+
+<body>
+    <!-- bottom nav bar -->
+    <div class="navbar" id="myNavbar">
+        <div class="mx-auto" style="text-align: center;">
+            <a href="#map"><img id="icon" src="images/map_icon.png"></a>
+            <a href="#peden" style="color: white;">01</a>
+            <a href="#eiffel" style="color: white;">02</a>
+            <a href="#bahamas" style="color: white;">03</a>
+            <a href="#macys" style="color: white;">04</a>
+            <a href="#tenn" style="color: white;">05</a>
+            <a href="#top" style="color: white;">TOP</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></div>
+    </div>
+
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="container-fluid" id="top">
+            <div class="row">
+                <div class="col-xs-12 mx-auto">
+                    <h1>Top five places I've performed with</h1>
+                    <h2 style="margin-top: auto;">THE OHIO UNIVERSITY MARCHING 110</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header image -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="headerImage">
+                    <img class="img-fluid" src="images/field_diamond_ohio.jpeg"
+                        alt="The Marching 110 in Diamond Ohio formation">
+                    <p class="caption">The Marching 110 performs their pre-game show in 2012 at Peden Stadium in Athens,
+                        Ohio. Photo by Nick Bolin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- intro text -->
+    <div class="row">
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto p-padding">
+            <p><strong>By Amanda Weisbrod</strong></p>
+            <p>
+                During my time in the Ohio University Marching 110, I've been a part of some pretty incredible
+                performances — I played alto saxophone in front of the Eiffel Tower, at a bowl game in the Bahamas, on
+                the Today Show, during halftime at NFL games, and in the Macy's Thanksgiving Parade, just to name a few
+                of the more notable ones.
+                <br>
+                <br>
+                No matter where we marched, grooved and danced, I always had an incredible time, but some performances
+                stick out more than others. Check out this list of my top five favorite places I've performed with the
+                Marching 110 from my first season in 2014 to my last season in 2017.
+            </p>
+        </div>
+    </div>
+
+    <!-- top five list above map -->
+    <div class="container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 mx-auto" style="justify-content: center;">
+                <a href="#peden">
+                    <h1><span style="color: #00694E">01 </span>
+                        <span>PEDEN STADIUM</span></h1>
+                </a>
+
+                <br>
+
+                <a href="#eiffel">
+                    <h1><span style="color: #00694E">02 </span>
+                        <span>EIFFEL TOWER</span></h1>
+                </a>
+
+                <br>
+
+                <a href="#bahamas">
+                    <h1><span style="color: #00694E">03 </span>
+                        <span>BAHAMAS BOWL</span></h1>
+                </a>
+
+                <br>
+
+                <a href="#macys">
+                    <h1><span style="color: #00694E">04 </span>
+                        <span>MACY'S PARADE</span></h1>
+                </a>
+
+                <br>
+
+                <a href="#tenn">
+                    <h1><span style="color: #00694E">05 </span>
+                        <span>UNIV. OF TENNESSEE </span></h1>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- mapbox -->
+    <div class="container" id="map">
+
+        <iframe width='100%' height='400px'
+            src="https://api.mapbox.com/styles/v1/aweisbrod95/ckuptvv9210b015mokcdsdgha.html?title=false&access_token=pk.eyJ1IjoiYXdlaXNicm9kOTUiLCJhIjoiY2s2bWNpbjZlMGw5djNtbjAwbDc5ZWo4NiJ9.1djcqy2twBMZY7gNuFB_cg&zoomwheel=false#1.12/40.7/-41.8"
+            title="Favorite performances" style="border:none;"></iframe>
+
+    </div>
+
+    <!-- javascript scroll fade test -->
+
+
+    <!-- 01 PEDEN STADIUM -->
+    <div class="container-fluid jumbotron h-padding" id="peden" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-lg-8 mx-auto">
+                <h1><span style="color: #00694E">01 </span>
+                    <span>PEDEN STADIUM</span></h1>
+                <img class="images" src="images/peden.jpg">
+                <p class="caption">Band members parch with pregame flags bearing the logo of the Marching 110's 50th
+                    anniversary at the 2017 homecoming football game. Photo by Nick Bolin.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto p-padding">
+
+
+                <p>
+                    <strong>Date: 2014–2017</strong>
+                    <br>
+                    <strong>Location: Athens, Ohio</strong>
+                    <br>
+                    My favorite performances were almost all at home in Peden Stadium because our student section has
+                    more energy and love for OU's marching band than any other university I've seen.
+                    <br>
+                    <br>
+                    One halftime show in particular sticks out — in 2015, the Bobcats were facing off against Marshall
+                    University in the Battle for the Bell, a yearly rivalry game. The Marching 110 played a Bruno Mars
+                    show, featuring top hit "Uptown Funk," and the student section went absolutely nuts.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 02 EIFFEL TOWER -->
+    <div class="container-fluid jumbotron h-padding" id="eiffel" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-lg-8 mx-auto">
+                <h1><span style="color: #00694E">02 </span>
+                    <span>EIFFEL TOWER</span></h1>
+                <img class="images" src="images/eiffel_tower.jpg">
+                <p class="caption">The Marching 110 performs Long Train Running, one of its signature songs, in front of
+                    the Eiffel Tower. Photo by Nick Bolin.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto p-padding">
+                <p>
+                    <strong>Date: May 2016</strong>
+                    <br>
+                    <strong>Location: Paris, France</strong>
+                    <br>
+                    Now this is a trip I'll never forget. In the summer after my freshman year at Ohio University, the
+                    110 traveled across seas to Paris. We not only danced in front of the Eiffel Tower, but also paraded
+                    through Disneyland Paris and performed a solemn yet moving set of patriotic songs at the WWII
+                    American Cemetary in Normandy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 03 BAHAMAS BOWL -->
+    <div class="container-fluid jumbotron h-padding" id="bahamas" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-lg-8 mx-auto">
+                <h1><span style="color: #00694E">03 </span>
+                    <span>BAHAMAS BOWL</span></h1>
+                <img class="images" src="images/bahamas.jpg">
+                <p class="caption">The upperclassmen of the 2017 Marching 110 pose for a group photo after a pep rally
+                    performance in the Bahamas. Photo by Nick Bolin.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto p-padding">
+
+                <p>
+                    <strong>Date: December 2017</strong>
+                    <br>
+                    <strong>Location: New Providence, Bahamas</strong>
+                    <br>
+                    Every year we prayed the Bobcats would get scheduled for the MAC bowl game in the Bahamas, and my
+                    senior year, our prayers were answered.
+                    <br>
+                    <br>
+                    This was an expensive trip to cover, so only the upperclassmen of the marching band were able to go.
+                    We spent three days hanging out on the beach, going down water slides and gambling in a casino. It
+                    was an amazing end to my time in the Marching 110.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 04 MACY'S PARADE -->
+    <div class="container-fluid jumbotron h-padding" id="macys" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-lg-8 mx-auto">
+                <h1><span style="color: #00694E">04 </span>
+                    <span>MACY'S PARADE</span></h1>
+                <img class="images" style="padding-top: 20px;" src="images/macys2017.jpg">
+                <p class="caption">The Marching 110 marches in the 2017 Macy's Thanksgiving Day Parade. Photo by Nick
+                    Bolin.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto p-padding">
+
+                <p>
+                    <strong>Date: November 2017</strong>
+                    <br>
+                    <strong>Location: New York, New York</strong>
+                    <br>
+                    Also in my senior year, we rose a bus all the way from Athens to New York City (a long and grueling
+                    trip complete with bus breakdowns and horrendous traffic) to march in the Macy's Thanksgiving Day
+                    Parade — the ultimate dream of all marching bands. I have never been so excited for a parade in my
+                    life.
+                    <br>
+                    <br>
+                    While we were in the city, I also got to see the Book of Mormon on Broadway and explore Times
+                    Square. It was my very first time in the Big Apple, so it was overall an amazing experience.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 05 TENNESSEE -->
+    <div class="container-fluid jumbotron  h-padding" id="tenn" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-lg-8 mx-auto">
+                <h1><span style="color: #00694E">05 </span>
+                    <span>UNIV. OF TENNESSEE </span></h1>
+                <img class="images" style="padding-top: 20px;" src="images/tennessee.jpg">
+                <p class="caption">The Marching 110 performs a country-music-themed halftime show during an away game at
+                    the University of Tennessee. Photo by Nick Bolin.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto p-padding" data-aos="fade-up" data-aos-delay="200">
+
+                <p>
+                    <strong>Date: September 2016</strong>
+                    <br>
+                    <strong>Location: Knoxville, Tennessee</strong>
+                    <br>
+                    Last on my top five is the football game between the Ohio University Bobcats and the University of
+                    Tennessee Volunteers. It was insanely hot in the stands, but when we took the field for halftime,
+                    everyone gave it their all.
+                    <br>
+                    <br>
+                    We performed a country music show because we were in the south, including square dancing and a lasso
+                    move during our dance section. The crowd, who were mostly made up of the opposing team's fans, went
+                    absolutely wild for it.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="dark-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p style="padding-left: 20px;">Amanda Weisbrod © 2021
+                        <br>
+                        <a class="js-scroll-trigger" href="#page-top">Back to top</a>
+                        <!-- <a href="#page-top">Back to top</a> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript dependencies: first jQuery, then Popper.js, then Bootstrap JS -->
+    <script src='https://unpkg.com/jquery/dist/jquery.min.js'></script>
+    <script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>
+    <script src='https://unpkg.com/bootstrap/dist/js/bootstrap.min.js'></script>
+
+    <!-- project JavaScript dependencies -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+    <!-- internal JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
